@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+<div id="projectpage">
+	<div class="row">
+		<div class="col-lg-12">
+			<img id="headlineimage" src="/images/projects/{{ .Params.headlineimage }}"  alt="headline picture of project"/>
+		</div>
+		<div class="col-lg-12">
+			<h1>{{ .Title }}</h1>
+			<p><a href="/makers/">{{ .Params.author }}</a></p>
+		</div>	
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div>
+				<h3>Approval</h3>
+				<div class="approval approval{{ .Params.amsterdam }}">A</div>
+				<div class="approval approval{{ .Params.belgium }}">B</div>
+				<div class="approval approval{{ .Params.barcelona }}">Ba</div>
+				<div class="approval approval{{ .Params.geneva }}">G</div>
+				<div class="approval approval{{ .Params.paris }}">P</div>
+			</div>
+			{{ (.Resources.GetMatch "intro.md").Content }}
+			{{ (.Resources.GetMatch "ingredients.md").Content }}
+		</div>
+		<div class="col-md-8">
+			<div>{{ (.Resources.GetMatch "main.md").Content }}</div>
+		</div>
+	</div>
+</div>
+
+{{ end }}

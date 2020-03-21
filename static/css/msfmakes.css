@@ -1,0 +1,225 @@
+body {
+	background-color:#fffdeb;
+	font-family: 'Poppins', sans-serif;
+	line-height:1.4;
+}
+
+a, .navlink {
+	color:#000;
+	text-decoration: underline;
+	text-underline-position: under;
+	text-decoration-color: #ccc;
+}
+
+a:hover, .navlink {
+	color:#000;
+	text-decoration: underline !important;
+	text-decoration-color: #000 !important;;
+}
+
+/* menu */
+
+.navbar {
+	align-items: initial;
+}
+
+#menu_logo {
+	vertical-align: top;
+}
+
+.tagline {
+	display:inline-block;
+	font-size:0.8em;
+	padding-top:12px;
+}
+
+#toptagline {
+	margin-bottom:0px;
+	margin-top:6px;
+	font-weight:700;
+}
+
+@media  (min-width: 900px) {
+	#menuitems {
+	    position: absolute;
+	    left: 50%;
+	    transform: translateX(-50%);
+	}
+}
+
+#menuitems li a {
+	color:#000;
+}
+
+
+.navbar {
+	padding: .5rem 0rem;
+}
+
+.highlight {
+	font-weight: 700;
+	font-size:1.35em;
+}
+
+#mainpageintro {
+	background-color:#fef480;
+}
+
+#mainpageintroleft {
+	padding-left:40px;
+	padding-top:40px;
+}
+
+/*@media  (min-width: 900px) {
+	.contentrow {
+		margin-left:-30px;
+		margin-right:-30px;
+	}
+}*/
+
+/* title */
+
+.subsectiontitle, h3 {
+	font-size:1.35em;
+	margin-top:20px;
+}
+
+
+/* project cards  and makers profile*/
+
+.projectcard, .makerprofile {
+	width:100%;
+	margin-top:30px;
+	font-weight:700;
+	border-bottom:1px solid #ccc;
+    padding-bottom:20px;
+}
+
+.projectcard p, .makerprofile p {
+	margin-bottom:4px;
+}
+
+.projectcard_title, .makerprofile_name {
+	font-size:1.2em;
+}
+
+.projectcard_number {
+	font-size:1.2em;
+}
+
+.projectcard_author a, .makerprofile_project a {
+	color:#aaaaaa;
+}
+
+.projectcard_description, .makerprofile_bio {
+	font-weight:400;
+}
+
+.lookingout {
+	background-color: #fbe07c;
+	background-clip: content-box;
+	width:100%;
+	margin-top:30px;
+	font-weight:700;
+}
+
+.lookingout_text {
+	padding:20px;
+}
+
+.lookingout p {
+	margin-bottom:4px;
+}
+
+.projectcard_title a:hover ~ .projectcard_title a{
+	color:#000;
+	text-decoration: underline !important;
+	text-decoration-color: #000 !important;;
+}
+
+/* icon fillers */
+
+.iconsegment {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* footer */
+
+#footer {
+	margin-top:40px;
+	padding-top:20px;
+	border-top:1px solid #000;
+}
+
+/* project page */
+
+#projectpage img {
+	width:100%;
+}
+
+#headlineimage {
+	background-size: auto 100%;
+	background-position: center top;
+	padding-bottom:20px;
+	background-clip: content-box;
+	min-height:300px;
+}
+
+#projectpage li {
+	list-style-type: none;
+	border-bottom: 1px solid #000;
+	padding-bottom:5px;
+	margin-bottom:5px;
+	font-size:0.9em;
+}
+
+#projectpage ul {
+	padding-left:0px;
+}
+
+.referentstip {
+	background-color:#fbe07c;
+	padding:20px;
+	font-weight:700;
+}
+
+.referentstipimg {
+	width:40px !important;
+	display:block;
+	padding-bottom:10px;
+}
+
+.approval {
+	border:1px solid #000;
+	display:inline-block;
+	border-radius:20px;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight:700;
+	font-size:1.2em;
+}
+
+.approvalr {
+	color:#ed1c24;
+}
+
+.approvaly {
+	color:#fbe07c;
+}
+
+.approvalg {
+	color:#91ccad;
+}
+
+/* banner */
+
+.temp_banner {
+	text-align:center;
+	background-color:#fff;
+	padding:20px;
+}

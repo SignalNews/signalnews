@@ -1,0 +1,22 @@
+<div id="nav-border" class="container">
+  <nav class="navbar navbar-expand-lg">
+	<a class="navbar-brand" href="/"><img id="menu_logo" src="/images/menu/MSF_LOGO.png" alt="MSF Logo" height="50px" /></a>
+	<div class="tagline">
+	  <p id="toptagline">Solutions worth sharing</p>
+	  <p id="bottomtagline">Beta Version</p>
+	</div>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul id="menuitems" class="navbar-nav mx-auto">
+	      {{ range .Site.Menus.main }}
+	    	{{ $text := .Name | safeHTML }}
+			  <li class="nav-item">
+			    <a class="nav-link" href="{{ .URL }}">{{ $text }}</a>
+			  </li>
+	      {{ end }}
+	    </ul>
+	  </div>
+  </nav>
+</div>

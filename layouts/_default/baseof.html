@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {{ $bootstrapCSS := "/css/bootstrap.min.css" }}
+    <link rel="stylesheet" href="{{ $bootstrapCSS }}">
+    {{ $msfmakesCSS := "/css/msfmakes.css" }}
+    <link rel="stylesheet" href="{{ $msfmakesCSS }}">
+    {{ $jqueryJS := "/js/jquery-3.4.1.min.js" }}
+    <script src="{{ $jqueryJS}}"></script>
+    {{ $bootstrapJS := "/js/bootstrap.min.js" }}
+    <script src="{{ $bootstrapJS}}"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <title>{{ .Title }}</title>
+  </head>  
+  <body>
+    {{ partial "menu.html" . }}
+    <div class="container">
+      <main id="main">
+       {{ block "main" . }}{{ end }}
+      </main>
+      {{ partial "footer.html" . }}
+    </div>
+    <script src="/js/site.js"></script>
+  </body>
+</html>
