@@ -1,0 +1,16 @@
+.lineItaly {
+    fill: none;
+    stroke: #ffab00;
+    stroke-width: 3;
+}
+
+.lineUK {
+    fill: none;
+    stroke: #1E88E5;
+    stroke-width: 3;
+}
+  
+.axislabels {
+	fill:#000000;
+	font: 14px sans-serif;
+}
